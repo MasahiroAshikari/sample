@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Complete Bootstrap 4 Website Layout</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	    <link href="Traning-style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Header-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Responsive">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Responsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Services">Services</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Team">Team</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Connect">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--Home-->
+<div id="Home" class="Home">
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <!--indicators-->
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <!--inner-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/background.png">
+                <div class="carousel-caption text-center">
+                    <h1>bootstrap</h1>
+                    <h3>Complete Website Layout</h3>
+                    <a class="btn btn-primary btn-lg">VIEW DEMO</a>
+                    <a class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item avtive"><img src="img/background2.png"></div>
+            <div class="carousel-item avtive"><img src="img/background3.png"></div>
+        </div>
+    </div>
+</div>
+<!--About-->
+<div id="About">
+    <div class="jumbotron">
+        <div class="row">
+            <div class=" col-xs-12 col-sm-12 col-md-9 col-xl-10">
+                <p>A web hosting service allows individuals and organizations to make their website accessible via the World Wide Web.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-xl-2">
+                <a href="#"><button class="btn btn-outline-light btn-lg">Web Hosting</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Services-->
+<div id="Services" class="services text-center">
+    <div class="welcome">
+        <h1>Built with ease.</h1>
+        <hr class="build-hr">
+        <p>Welcome to my Bootstrap 4 website tutorial! Bootstrap is a free and open-sorce front-end library with HTML and CSS based dasigns.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <i class="fas fa-code"></i>
+            <h3>HTML5</h3>
+            <p>Built with the latest version of HTML, HTML5.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <i class="fas fa-bold"></i>
+            <h3>Btootstrap4</h3>
+            <p>Built with the latest version of HTML, HTML5.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <i class="fab fa-css3"></i>
+            <h3>CSS3</h3>
+            <p>Built with the latest version of HTML, HTML5.</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="build">
+    <div class="row">
+        <div class="col-lg-6 build-content">
+            <h3>If you build it...</h3>
+            <p>The colums will automatically stack on top of each other when the screen is less than 576px wide.<br>The colums will automatically stack on top of each other when the screen is less than 576px wide.<br>The colums will automatically stack on top of each other when the screen is less than 576px wide.</p>
+            <button class="btn learn">Learn More</button>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/desk.png" class="img-fluid">
+        </div>
+    </div>
+<hr class="my-4">
+
+</div>
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed">
+        </div>
+    </div>
+</figure>
+
+<button class="fun" data-toggle="collapse" data-target="#emoji">click here</button>
+<div id="emoji" class="collapse">
+    <div class="row text-center">
+        <div class="col-md-3 col-sm-6">
+            <img class="gif" src="img/gif/panda.gif">
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <img src="img/gif/poo.gif">
+        </div>
+        <div class="col-md-3 col-sm-6">
+               <img src="img/gif/unicorn.gif">
+            </div>
+        <div class="col-md-3 col-sm-6">
+            <img src="img/gif/chicken.gif">
+        </div>
+    </div>
+</div>
+<!-- Team-->
+<div id="Team" class="team padding">
+    <h1 class="text-center">Meet the Team</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png" >
+                <div class="card-title">
+                    <h3>John Doe</h3>
+                    <p class="card-text">John is an Internet entrepreneur with almost 20 years of experience.</p>
+                </div>
+                <a class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/team2.png" >
+                <div class="card-title">
+                    <h3>John Doe</h3>
+                    <p class="card-text">John is an Internet entrepreneur with almost 20 years of experience.</p>
+                </div>
+                <a class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/team3.png" >
+                <div class="card-title">
+                    <h3>John Doe</h3>
+                    <p class="card-text">John is an Internet entrepreneur with almost 20 years of experience.</p>
+                </div>
+                <a class="btn btn-outline-secondary">See Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="philosophy">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Our Philosohpy</h3>
+            <p>The colums will automatically stack on top of each other when the screen is less than 576px wide.</p>
+            <p>The colums will automatically stack on top of each other when the screen is less than 576px wide.</p>     
+            <p>The colums will automatically stack on top of each other when the screen is less than 576px wide.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/bootstrap2.png" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<hr>
+<!--Connect-->
+<div id="Connect" class="connect text-center padding">
+    <h1>Connect</h1>
+    <div class="row">
+        <div class="col-12 social">
+            <a><i class="fab fa-facebook"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-google-plus-g"></i></a>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<footer>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img src="img/w3newbie.png">
+            <hr class="light">
+            <p>555-555-5555</p>
+            <p>email@myemail.com</p>
+            <p>100 Street Name</p>
+            <p>City, State, 00000</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <h5>Our ours</h5>
+            <hr class="light">
+            <p>555-555-5555</p>
+            <p>email@myemail.com</p>
+            <p>100 Street Name</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <h5>Our ours</h5>
+            <hr class="light">
+            <p>555-555-5555</p>
+            <p>email@myemail.com</p>
+            <p>100 Street Name</p>
+        </div>
+        <div class="col-12">
+            <hr class="light-100">
+            <h5>&copy;masahiro.com</h5>
+        </div>        
+    </div>
+</footer>
+
+</body>
+</html>
